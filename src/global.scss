@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	background-color: var(--mui-palette-common-background);
+	color-scheme: light dark;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body,
+#root {
+	margin: 0 !important;
+	padding: 0 !important;
+
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#route-body {
+	background-image: url(/assets/pizza-background.svg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: 120px 120px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	&:not(:has(.cart-no-items)) {
+		padding: 20px;
+	}
+}

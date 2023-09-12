@@ -1,0 +1,131 @@
+.pizzas {
+	margin-top: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+	display: grid;
+	grid-gap: 20px;
+	height: 100%;
+	width: 100%;
+}
+
+.pizza-modal {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	min-width: 50vw;
+	max-width: 100%;
+	min-height: 0;
+	max-height: 75vh;
+	background-color: var(--mui-palette-background-paper);
+	z-index: 9999999999999999999999999999999;
+	background-image: var(--mui-overlays-5);
+	color: var(--mui-palette-text-primary);
+
+	border: none !important;
+	outline: none !important;
+	border-radius: 5px;
+	padding: 20px;
+
+	::-webkit-scrollbar {
+		padding-left: 8px;
+		background-color: var(--mui-palette-common-background);
+		background-image: var(--mui-overlays-10);
+		border-radius: 50px;
+		width: 15px;
+		height: 15px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--mui-palette-common-background);
+		background-image: var(--mui-overlays-25);
+		border-radius: 50px;
+	}
+
+	&-title {
+		font-size: 2rem !important;
+		font-weight: 600 !important;
+	}
+
+	&-product {
+		background-image: var(--mui-overlays-10);
+	}
+
+	&-body {
+		margin-top: 15px !important;
+		overflow: auto;
+		min-height: 0;
+		max-height: 100%;
+		padding: 0 10px;
+
+		.pizza-size,
+		.pizza-crust,
+		.pizza-topping {
+			&-picker {
+				padding: 10px 0;
+				display: flex;
+				gap: 0.75rem;
+				flex-direction: column;
+			}
+
+			&-card {
+				background-image: var(--mui-overlays-10);
+				padding: 20px;
+				cursor: pointer;
+
+				&[data-is-selected='true'] {
+					background-image: var(--mui-overlays-1);
+				}
+			}
+		}
+	}
+
+	&-divider {
+		margin-top: 15px !important;
+	}
+
+	&-header {
+		display: flex;
+		align-items: center;
+		font-size: 1.5rem;
+		font-weight: 600;
+
+		&-close {
+			margin-left: auto !important;
+		}
+	}
+
+	&-footer {
+		display: flex;
+		width: 100%;
+		margin-top: 10px;
+
+		&-add-to-cart {
+			width: 100%;
+		}
+	}
+}
+
+[data-mui-color-scheme='light'] {
+	.pizza-modal {
+		&-body {
+			.pizza-size,
+			.pizza-crust,
+			.pizza-topping {
+				&-picker {
+					padding: 10px 0;
+					display: flex;
+					gap: 0.75rem;
+					flex-direction: column;
+				}
+
+				&-card {
+					&[data-is-selected='true'] {
+						background-image: linear-gradient(rgba(0 0 0 / 0.1), rgba(0 0 0 / 0.1));
+					}
+				}
+			}
+		}
+	}
+}
