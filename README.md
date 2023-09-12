@@ -1,0 +1,6 @@
+![image](https://github.com/localip/ft-messenger/assets/98427312/6c5869d5-67cb-4591-b3a1-8ef0a764c65d)
+![image](https://github.com/localip/ft-messenger/assets/98427312/3e694f21-51ca-4741-b99d-879b5ec71ab7)
+![image](https://github.com/localip/ft-messenger/assets/98427312/68385584-a8ea-4bfa-9907-c79e68cf2115)
+![image](https://github.com/localip/ft-messenger/assets/98427312/256528cb-c9cb-4c75-8e0c-6eb3b25949bc)
+![image](https://github.com/localip/ft-messenger/assets/98427312/7cb22e8e-ecbd-4bc0-8a89-d5dde56f97d5)
+![image](https://github.com/localip/ft-messenger/assets/98427312/5be085de-e16d-4fe8-bfc0-fae92c790073)
